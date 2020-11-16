@@ -1,6 +1,7 @@
 on:
+  pull_request:
   push:
-    branches-ignore: [ main, master ]
+    branches: [ main, master ]
 
 jobs:
   build:
@@ -13,7 +14,7 @@ jobs:
         with:
           java-version: 11
       - name: Publish artifact on GitHub Packages
-        run: mvn -B clean package --file pom.xml
+        run: mvn -B clean deploy -DskipTests --file pom.xml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Semantic Release
@@ -40,6 +41,6 @@ jobs:
             @semantic-release/changelog@5.0.1
             @semantic-release/git@9.0.0
             @conveyal/maven-semantic-release@4.5.0
-          dry_run: true
+          dry_run: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
