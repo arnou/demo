@@ -1,3 +1,16 @@
+# [1.2.0](https://github.com/arnou/demo/compare/v1.1.0...v1.2.0) (2020-11-16)
+
+
+### Bug Fixes
+
+* forgot deploy goal ([206ef7d](https://github.com/arnou/demo/commit/206ef7db9a2b30e748faf1619a15277df61ec2a1))
+
+
+### Features
+
+* add maven packaging to github ([7fb4172](https://github.com/arnou/demo/commit/7fb4172ccd6677fde91a7575ede34778a261eb2e))
+* add workflow for push branches ([7efbb99](https://github.com/arnou/demo/commit/7efbb99f6a78cc984b25b0cdbbaa1e82b1195d9a))
+
 # [1.1.0](https://github.com/arnou/demo/compare/v1.0.0...v1.1.0) (2020-11-16)
 
 
