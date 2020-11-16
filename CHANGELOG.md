@@ -1,3 +1,16 @@
+# [1.3.0](https://github.com/arnou/demo/compare/v1.2.0...v1.3.0) (2020-11-16)
+
+
+### Bug Fixes
+
+* remove dot in README.md ([2920e39](https://github.com/arnou/demo/commit/2920e39fa9b0ff74c5123f320e08091be50d9ab8))
+* remove unused workflows and restore semantic maven ([f78e5c9](https://github.com/arnou/demo/commit/f78e5c9c54ad8f6e0e58e566ba9fba63453c29eb))
+
+
+### Features
+
+* add maven properties ([0bbd1dd](https://github.com/arnou/demo/commit/0bbd1ddd9577150a0bc95869e7a9d7d525141825))
+
 # [1.2.0](https://github.com/arnou/demo/compare/v1.1.0...v1.2.0) (2020-11-16)
 
 
