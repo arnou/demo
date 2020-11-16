@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/arnou/demo/compare/v1.0.0...v1.1.0) (2020-11-16)
+
+
+### Features
+
+* add maven packaging ([b55081e](https://github.com/arnou/demo/commit/b55081ed961534390191131ea641ed16924fbe95))
+
 # 1.0.0 (2020-11-16)
 
 
