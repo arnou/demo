@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/arnou/demo/compare/v1.3.0...v1.3.1) (2020-11-17)
+
+
+### Bug Fixes
+
+* **doc:** add bullet ([11b0e0f](https://github.com/arnou/demo/commit/11b0e0f22af9cacf93aaee12b9123275fdcb38cd))
+
 # [1.3.0](https://github.com/arnou/demo/compare/v1.2.0...v1.3.0) (2020-11-16)
 
 
