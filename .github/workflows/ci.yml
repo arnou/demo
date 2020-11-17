@@ -40,7 +40,6 @@ jobs:
             @semantic-release/git@9.0.0
             @conveyal/maven-semantic-release@4.5.0
           dry_run: false
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            GPG_KEY_NAME: ${{ secrets.GPG_PRIVATE_KEY }}
-            GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
