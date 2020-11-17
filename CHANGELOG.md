@@ -1,3 +1,11 @@
+## [1.3.3](https://github.com/arnou/demo/compare/v1.3.2...v1.3.3) (2020-11-17)
+
+
+### Bug Fixes
+
+* do not use gpg.key_name ([af17e94](https://github.com/arnou/demo/commit/af17e948e60c79f3760d0f5ef069a3f20cc0827f))
+* indentation ([96cc405](https://github.com/arnou/demo/commit/96cc405810b51f004408f3cf5c34d05daf14705e))
+
 ## [1.3.2](https://github.com/arnou/demo/compare/v1.3.1...v1.3.2) (2020-11-17)
 
 
