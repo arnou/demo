@@ -36,7 +36,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Semantic Release
-        if: "$GITHUB_BRANCH" == "main"
+        if: '${GITHUB_BRANCH}' == 'main'
         uses: cycjimmy/semantic-release-action@v2
         with:
           semantic_version: 17.2.2
