@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/arnou/demo/compare/v1.3.3...v1.3.4) (2020-11-18)
+
+
+### Bug Fixes
+
+* restore wrapper and remove conveyal plugin ([a061f1b](https://github.com/arnou/demo/commit/a061f1b027c4e5a0b424b7a8e2abf4de6a50f33f))
+
 ## [1.3.3](https://github.com/arnou/demo/compare/v1.3.2...v1.3.3) (2020-11-17)
 
 
