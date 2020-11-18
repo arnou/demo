@@ -12,9 +12,7 @@ jobs:
         with:
           java-version: 11
       - name: Build artifact
-        run: mvn -B clean package --file pom.xml
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: mvnw -B clean package --file pom.xml
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2
         with:
@@ -41,4 +39,4 @@ jobs:
           dry_run: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+
