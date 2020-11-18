@@ -1,3 +1,17 @@
+## [1.3.6](https://github.com/arnou/demo/compare/v1.3.5...v1.3.6) (2020-11-18)
+
+
+### Bug Fixes
+
+* conditional release ([bb11ec2](https://github.com/arnou/demo/commit/bb11ec2c41bb12f6a0cebff33fa243d6486ea594))
+* conditional release ([6dd0240](https://github.com/arnou/demo/commit/6dd0240ef428d897df5a79849dcf49c6e9fa9780))
+* conditional release ([6a20a10](https://github.com/arnou/demo/commit/6a20a109bd2c3d20990122ea8df9ebbd595f707c))
+* conditional release ([e2b8526](https://github.com/arnou/demo/commit/e2b85262710c0faca9d4a73cba6b1b8238469d09))
+* conditional release ([fcd483a](https://github.com/arnou/demo/commit/fcd483ad2549457d0bd280496876defdaf770447))
+* conditional release ([7eea851](https://github.com/arnou/demo/commit/7eea851de884787481a0b800f5227824484dda5f))
+* conditional release ([79482b8](https://github.com/arnou/demo/commit/79482b8db4ce219651c301fa8d8ea766a7f8cf1b))
+* conditional release ([4f20946](https://github.com/arnou/demo/commit/4f20946297b06b17d6eba1e2a1fbcd2469ce5493))
+
 ## [1.3.5](https://github.com/arnou/demo/compare/v1.3.4...v1.3.5) (2020-11-18)
 
 
