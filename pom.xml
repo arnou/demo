@@ -167,8 +167,13 @@
             <goals>
               <goal>sign</goal>
             </goals>
-            <!-- If using gpg > 2.1 it is necessary for gpg to not try to use the pinentry programs
-              however, it looks like Travis does not need this entry -->
+            <configuration>
+              <!-- Prevent `gpg` from using pinentry programs -->
+              <gpgArguments>
+                <arg>--pinentry-mode</arg>
+                <arg>loopback</arg>
+              </gpgArguments>
+            </configuration>
           </execution>
         </executions>
       </plugin>
