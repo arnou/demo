@@ -24,11 +24,11 @@ jobs:
       - name: Build artifact
         run: chmod +x mvnw && ./mvnw -B --no-transfer-progress clean package --file pom.xml
       - name: Semantic Pre-Release
-        if: '$GITHUB_BRANCH' != 'main'
+        if: $GITHUB_BRANCH != main
         uses: cycjimmy/semantic-release-action@v2
         with:
           semantic_version: 17.2.2
-          branches: '$GITHUB_BRANCH'
+          branches: [ $GITHUB_BRANCH ]
           extra_plugins: |
             @semantic-release/changelog@5.0.1
             @semantic-release/git@9.0.0
@@ -36,7 +36,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Semantic Release
-        if: '$GITHUB_BRANCH' == 'main'
+        if: $GITHUB_BRANCH == main
         uses: cycjimmy/semantic-release-action@v2
         with:
           semantic_version: 17.2.2
