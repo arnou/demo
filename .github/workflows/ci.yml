@@ -1,5 +1,4 @@
-on:
-  [ push, pull_request ]
+on: push
 
 jobs:
   build:
@@ -21,7 +20,7 @@ jobs:
       - name: Build artifact
         run: chmod +x mvnw && ./mvnw -B --no-transfer-progress clean package --file pom.xml
       - name: Semantic Pre-Release
-        if: github.event_name == 'pull_request'
+        if: github.ref != 'refs/heads/main'
         uses: cycjimmy/semantic-release-action@v2
         with:
           semantic_version: 17.2.2
@@ -33,7 +32,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Semantic Release
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main'
         uses: cycjimmy/semantic-release-action@v2
         with:
           semantic_version: 17.2.2
