@@ -1,3 +1,15 @@
+## [1.3.5](https://github.com/arnou/demo/compare/v1.3.4...v1.3.5) (2020-11-18)
+
+
+### Bug Fixes
+
+* add cache ([1b7a79e](https://github.com/arnou/demo/commit/1b7a79e337833a92d2b1c695b66c26e86f0bc3cb))
+* add dependencies for maven-wrapper ([b8854d1](https://github.com/arnou/demo/commit/b8854d1d55212d5b3ab27e5e3f7d6879ba908dd3))
+* add permissions to use maven wrapper ([8249a21](https://github.com/arnou/demo/commit/8249a2132fb7a4b4360ada6a2f3affcbddd8abbc))
+* remove unused variables and use maven wrapper ([c580440](https://github.com/arnou/demo/commit/c580440ddc622659b9a8912d8dba499ef4b1920b))
+* restore .mvn from .gitignore ([adb9007](https://github.com/arnou/demo/commit/adb9007663c640c15cbe5d6f7b783cf97f5009a9))
+* use maven wrapper in current directory ([40bd1a7](https://github.com/arnou/demo/commit/40bd1a7e86065f1b0b9502a725b2152ad4ae06fc))
+
 ## [1.3.4](https://github.com/arnou/demo/compare/v1.3.3...v1.3.4) (2020-11-18)
 
 
