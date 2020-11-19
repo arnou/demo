@@ -1,3 +1,28 @@
+## [1.3.7](https://github.com/arnou/demo/compare/v1.3.6...v1.3.7) (2020-11-19)
+
+
+### Bug Fixes
+
+* add release branch in branches array ([f82f872](https://github.com/arnou/demo/commit/f82f87218f19f824c50dcfb98d1d0e653ca167b9))
+* add source plugin version ([bde721d](https://github.com/arnou/demo/commit/bde721d5a018e9298ba4595db238e031c9a7226e))
+* enclose branch variable with quotes ([a7f5dc9](https://github.com/arnou/demo/commit/a7f5dc985dc3792c2dd65b3cf298b74a9a81d2a9))
+* enclose with simple quotes ([be00a40](https://github.com/arnou/demo/commit/be00a407ca2e933dbb7f3a32147ddbb4403c26f5))
+* get env branch name before script ([55bffed](https://github.com/arnou/demo/commit/55bffedbd01563d488fbff4380051d501ed711bb))
+* trigger only on push, semantic not relevant on pr ([43bd9a2](https://github.com/arnou/demo/commit/43bd9a2d58104970bbf1ad624834857e1b105437))
+* use new style for adding environment variables ([a0735f0](https://github.com/arnou/demo/commit/a0735f0363a022f6abfc16bdaedc3eb56eaac1c6))
+* use new var ([72e1469](https://github.com/arnou/demo/commit/72e14690f770100be1f9b7ea4182840adcd84460))
+* use new var ([14184f1](https://github.com/arnou/demo/commit/14184f19edcf2628674e7baac2f2e4e37df65059))
+* use new var ([81058a6](https://github.com/arnou/demo/commit/81058a6d3f68f0c878e3464683681b9c04f4d69b))
+* use new var ([53c2555](https://github.com/arnou/demo/commit/53c2555e542abd006401c38e90440dcb651b134d))
+* use new var ([36343ad](https://github.com/arnou/demo/commit/36343adf94b56fac91bafc1f279820090f04528f))
+* use new var ([e800bb0](https://github.com/arnou/demo/commit/e800bb02c5a77ac860f8c309643a787f167c704f))
+* use new var ([f72f418](https://github.com/arnou/demo/commit/f72f41817821fff6a1529dd2f93d583399e36777))
+* use new var ([b9ceab6](https://github.com/arnou/demo/commit/b9ceab6092e85b864e82d5acde589637ae3444c0))
+* use new var ([3bb4a8b](https://github.com/arnou/demo/commit/3bb4a8b5f70ab1a8c4aa0536bf5c5f2dc5f451c7))
+* use new var ([316f0a0](https://github.com/arnou/demo/commit/316f0a0e9b94677bdbdf3949d24f7a856c848fcf))
+* use new var ([98e57cd](https://github.com/arnou/demo/commit/98e57cd650fe2f4099c71a58904a78c0537d27c8))
+* use new var ([eb5d83c](https://github.com/arnou/demo/commit/eb5d83c6b6a6703d426b2659bfde7344b9982f7a))
+
 ## [1.3.6](https://github.com/arnou/demo/compare/v1.3.5...v1.3.6) (2020-11-18)
 
 
