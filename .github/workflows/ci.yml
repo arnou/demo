@@ -22,7 +22,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
       - name: Build artifact
-        run: chmod +x mvnw && ./mvnw -B --no-transfer-progress clean package --file pom.xml
+        run: chmod +x mvnw && ./mvnw -B -ntp clean verify
       - name: Semantic Prerelease
         if: env.GITHUB_BRANCH != 'main'
         uses: cycjimmy/semantic-release-action@v2
