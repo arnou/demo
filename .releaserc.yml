@@ -5,5 +5,5 @@ plugins:
   - "@semantic-release/git"
   - "@semantic-release/github"
   - - "@semantic-release/exec"
-    - verifyConditionsCmd: "./mvnw -B -ntp verify"
+    - verifyConditionsCmd: "./mvnw -B -ntp verify 1>&2"
       publishCmd: "sudo ./publish.sh ${nextRelease.version} ${options.branch} ${commits.length} ${Date.now()}"
