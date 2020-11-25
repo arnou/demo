@@ -22,7 +22,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
       - name: Import GPG
-        run: export GPG_TTY=$(tty) && echo -e "$GPG_PRIVATE_KEY" | gpg --import
+        run: export GPG_TTY=$(tty) && echo -e "$GPG_PRIVATE_KEY" | gpg --batch --import
         env:
           GPG_PRIVATE_KEY: ${{ secrets.gpg_private_key }}
       - name: Build artifact
