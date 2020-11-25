@@ -21,6 +21,10 @@ jobs:
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: |
             ${{ runner.os }}-maven-
+      - name: Import GPG
+        run: echo -e "$GPG_PRIVATE_KEY" | gpg --import
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.gpg_private_key }}
       - name: Build artifact
         run: chmod +x mvnw && ./mvnw -B -ntp clean package
       - name: Semantic Prerelease
