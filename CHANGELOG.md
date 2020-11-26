@@ -1,3 +1,10 @@
+## [1.3.12](https://github.com/arnou/demo/compare/v1.3.11...v1.3.12) (2020-11-26)
+
+
+### Bug Fixes
+
+* inject settings maven ([bd2af65](https://github.com/arnou/demo/commit/bd2af65b09e42a3e4ba2745c8d5423ad7722b3bb))
+
 ## [1.3.11](https://github.com/arnou/demo/compare/v1.3.10...v1.3.11) (2020-11-26)
 
 
