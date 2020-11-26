@@ -1,3 +1,10 @@
+## [1.3.14](https://github.com/arnou/demo/compare/v1.3.13...v1.3.14) (2020-11-26)
+
+
+### Bug Fixes
+
+* **deps:** bump micronaut-maven-plugin from 1.0.0 to 1.1.0 ([e3ed5c3](https://github.com/arnou/demo/commit/e3ed5c3ad7044a8f3506d272c9d9db1dea288188))
+
 ## [1.3.13](https://github.com/arnou/demo/compare/v1.3.12...v1.3.13) (2020-11-26)
 
 
