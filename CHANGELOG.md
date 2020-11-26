@@ -1,3 +1,10 @@
+## [1.3.11](https://github.com/arnou/demo/compare/v1.3.10...v1.3.11) (2020-11-26)
+
+
+### Bug Fixes
+
+* remove publish.sh script and replace directly in .releaserc.yml ([c7e3fa5](https://github.com/arnou/demo/commit/c7e3fa544160b0db59104b10a316f0a68bbca41b))
+
 ## [1.3.10](https://github.com/arnou/demo/compare/v1.3.9...v1.3.10) (2020-11-26)
 
 
