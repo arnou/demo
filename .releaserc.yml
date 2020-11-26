@@ -6,4 +6,4 @@ plugins:
   - "@semantic-release/github"
   - - "@semantic-release/exec"
     - verifyConditionsCmd: "./mvnw -B -ntp verify -Dgpg.passphrase=$GPG_PASSPHRASE 1>&2"
-      publishCmd: "sudo ./publish.sh ${nextRelease.version} ${options.branch} ${commits.length} ${Date.now()}"
+      publishCmd: "./mvnw -B -ntp deploy -Drevision=${nextRelease.version}"

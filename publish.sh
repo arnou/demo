@@ -1,1 +1,0 @@
-./mvnw -B -ntp deploy -Drevision=$1
