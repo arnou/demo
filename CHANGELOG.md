@@ -1,3 +1,10 @@
+## [1.3.13](https://github.com/arnou/demo/compare/v1.3.12...v1.3.13) (2020-11-26)
+
+
+### Bug Fixes
+
+* **deps:** bump micronaut-parent from 2.1.3 to 2.2.0 ([fc27d1c](https://github.com/arnou/demo/commit/fc27d1ceea6fdb7d908312fdfd2101aead8902f5))
+
 ## [1.3.12](https://github.com/arnou/demo/compare/v1.3.11...v1.3.12) (2020-11-26)
 
 
