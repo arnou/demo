@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Get branch name
         run: |
-          echo "GITHUB_BRANCH=${GITHUB_REF##*/}" >> $GITHUB_ENV
+          echo "GITHUB_BRANCH=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV
           echo "Branche : $GITHUB_BRANCH"
       - name: Checkout
         uses: actions/checkout@v2
