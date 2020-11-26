@@ -1,3 +1,20 @@
+## [1.3.8](https://github.com/arnou/demo/compare/v1.3.7...v1.3.8) (2020-11-26)
+
+
+### Bug Fixes
+
+* add import gpg ([81930bc](https://github.com/arnou/demo/commit/81930bc57e0cd6a02c1745528b34059cee7eb65c))
+* add passphrase to job ([855c8e4](https://github.com/arnou/demo/commit/855c8e43a9bf9d31662b5b2c890fd52fb2d5bbfa))
+* implement exec and use maven revision ([4c9d409](https://github.com/arnou/demo/commit/4c9d4091f4c98aa10f76580efd2789c111e1579c))
+* oubli du $ pour les secrets ([e3a8cc9](https://github.com/arnou/demo/commit/e3a8cc97dfcce3669d654554ec0ebd1d28aafcdf))
+* redirect to stderr ([de1eb99](https://github.com/arnou/demo/commit/de1eb990f162fdafd196fb3745e0fd9191f2c04b))
+* remove newline ([edef8e8](https://github.com/arnou/demo/commit/edef8e8a41b028c10804f250a937048a031b22c9))
+* replace verify by mvnw and sudo publish ([0c43176](https://github.com/arnou/demo/commit/0c4317635993db78a0d68bc6cda1f592d47ea3de))
+* use mode batch during import gpg ([4309f0e](https://github.com/arnou/demo/commit/4309f0e9501b4ce3f672b737cdec4dad8df5afb6))
+* use plugin exec ([cdd5f30](https://github.com/arnou/demo/commit/cdd5f301e2f3450f9d74c63318bfdd5604a70784))
+* use plugin exec ([607a7f5](https://github.com/arnou/demo/commit/607a7f58b75d58696ecbc1bde55757b5addd285e))
+* use tty ([68938df](https://github.com/arnou/demo/commit/68938df843b38069af8888e3a34659e0ccf456c8))
+
 ## [1.3.7](https://github.com/arnou/demo/compare/v1.3.6...v1.3.7) (2020-11-19)
 
 
