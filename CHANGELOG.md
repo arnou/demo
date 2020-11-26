@@ -1,3 +1,10 @@
+## [1.3.10](https://github.com/arnou/demo/compare/v1.3.9...v1.3.10) (2020-11-26)
+
+
+### Bug Fixes
+
+* improve branch name resolution ([336d584](https://github.com/arnou/demo/commit/336d584d1381ec5ee57188161b9309030f65d0fd))
+
 ## [1.3.9](https://github.com/arnou/demo/compare/v1.3.8...v1.3.9) (2020-11-26)
 
 
