@@ -5,5 +5,11 @@ plugins:
   - "@semantic-release/git"
   - "@semantic-release/github"
   - - "@semantic-release/exec"
-    - verifyConditionsCmd: "./mvnw -B -ntp verify -Dgpg.passphrase=$GPG_PASSPHRASE 1>&2"
-      publishCmd: "./mvnw -B -ntp deploy -Drevision=${nextRelease.version} -s maven-settings.xml 1>&2"
+    - verifyConditionsCmd: >
+        ./mvnw -B -ntp verify -Dgpg.passphrase=$GPG_PASSPHRASE 1>&2
+      publishCmd: >
+        ./mvnw -B -ntp deploy
+        -Drevision=${nextRelease.version}
+        -Denforcer.skip=false
+        -DskipNexusStagingDeployMojo=true
+        -s maven-settings.xml 1>&2
