@@ -28,7 +28,7 @@ jobs:
         env:
           GPG_PRIVATE_KEY: ${{ secrets.gpg_private_key }}
       - name: Build artifact
-        run: chmod +x mvnw && ./mvnw -B -ntp clean package
+        run: chmod +x mvnw && ./mvnw -B -ntp -Denforcer.skip=true clean package
       - name: Semantic Prerelease
         if: env.GITHUB_BRANCH != 'main'
         uses: cycjimmy/semantic-release-action@v2

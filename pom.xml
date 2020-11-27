@@ -240,7 +240,6 @@
                 </requireReleaseDeps>
               </rules>
               <fail>true</fail>
-              <skip>true</skip>
             </configuration>
           </execution>
         </executions>
