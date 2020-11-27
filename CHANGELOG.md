@@ -1,3 +1,10 @@
+## [1.3.15](https://github.com/arnou/demo/compare/v1.3.14...v1.3.15) (2020-11-27)
+
+
+### Bug Fixes
+
+* enforce when publish and skip real deploy ([3f97b95](https://github.com/arnou/demo/commit/3f97b95995f5f84e700423b426e56c591678d124))
+
 ## [1.3.14](https://github.com/arnou/demo/compare/v1.3.13...v1.3.14) (2020-11-26)
 
 
