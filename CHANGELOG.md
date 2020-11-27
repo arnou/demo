@@ -1,3 +1,10 @@
+## [1.3.17](https://github.com/arnou/demo/compare/v1.3.16...v1.3.17) (2020-11-27)
+
+
+### Bug Fixes
+
+* only skip enforce with cli ([ac0ad4a](https://github.com/arnou/demo/commit/ac0ad4a9a60f9be5095dad66211edb71479313d6))
+
 ## [1.3.16](https://github.com/arnou/demo/compare/v1.3.15...v1.3.16) (2020-11-27)
 
 
