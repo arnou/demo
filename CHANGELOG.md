@@ -1,3 +1,10 @@
+## [1.3.20](https://github.com/arnou/demo/compare/v1.3.19...v1.3.20) (2020-11-29)
+
+
+### Bug Fixes
+
+* invoke nexus-staging goal ([f7c3857](https://github.com/arnou/demo/commit/f7c3857aa73332ab6dd9372ebdd68134d5c7c0cc))
+
 ## [1.3.19](https://github.com/arnou/demo/compare/v1.3.18...v1.3.19) (2020-11-29)
 
 
