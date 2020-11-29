@@ -1,3 +1,10 @@
+## [1.3.21](https://github.com/arnou/demo/compare/v1.3.20...v1.3.21) (2020-11-29)
+
+
+### Bug Fixes
+
+* test release info ([8eb7ba7](https://github.com/arnou/demo/commit/8eb7ba74b5ce46970af348710fdfd0a8058f8f26))
+
 ## [1.3.20](https://github.com/arnou/demo/compare/v1.3.19...v1.3.20) (2020-11-29)
 
 
