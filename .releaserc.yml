@@ -8,9 +8,9 @@ plugins:
     - verifyConditionsCmd: "./mvnw -B -ntp verify
         -Dgpg.passphrase=$GPG_PASSPHRASE
          -Pdeploy 1>&2"
-      publishCmd: "./mvnw -B -ntp deploy
+      publishCmd: "./mvnw -B -ntp nexus-staging:deploy
         -Drevision=${nextRelease.version}
-        -DskipNexusStagingDeployMojo=false
+        -DskipNexusStagingDeployMojo=true
         -DaltSnapshotDeploymentRepository=snapshots::default::https://oss.sonatype.org/content/repositories/snapshots
         -DaltReleaseDeploymentRepository=releases::default::https://oss.sonatype.org/service/local/staging/deploy/maven2
         -Pdeploy
