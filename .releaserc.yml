@@ -14,4 +14,5 @@ plugins:
         -DaltSnapshotDeploymentRepository=snapshots::default::https://oss.sonatype.org/content/repositories/snapshots
         -DaltReleaseDeploymentRepository=releases::default::https://oss.sonatype.org/service/local/staging/deploy/maven2
         -Pdeploy
-        -s maven-settings.xml 1>&2"
+        -s maven-settings.xml 1>&2 &&
+        echo {'name': 'Maven Release ${nextRelease.version}', 'url': 'http://url/release/${nextRelease.version}'}"
