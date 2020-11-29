@@ -23,12 +23,10 @@ jobs:
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: |
             ${{ runner.os }}-maven-
-      - name: Import GPG
-        run: export GPG_TTY=$(tty) && echo -e "$GPG_PRIVATE_KEY" | gpg --batch --import
+      - name: Import GPG and Prepare build
+        run: export GPG_TTY=$(tty) && echo -e "$GPG_PRIVATE_KEY" | gpg --batch --import && chmod +x mvnw
         env:
           GPG_PRIVATE_KEY: ${{ secrets.gpg_private_key }}
-      - name: Build artifact
-        run: chmod +x mvnw && ./mvnw -B -ntp -Denforcer.skip=true clean package
       - name: Semantic Prerelease
         if: env.GITHUB_BRANCH != 'main'
         uses: cycjimmy/semantic-release-action@v2
