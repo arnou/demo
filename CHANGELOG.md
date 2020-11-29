@@ -1,3 +1,10 @@
+## [1.3.18](https://github.com/arnou/demo/compare/v1.3.17...v1.3.18) (2020-11-29)
+
+
+### Bug Fixes
+
+* use maven profile and remove build from workflow ([187fa06](https://github.com/arnou/demo/commit/187fa0685cc55511b2b6314b65052ce36def3fe3))
+
 ## [1.3.17](https://github.com/arnou/demo/compare/v1.3.16...v1.3.17) (2020-11-27)
 
 
