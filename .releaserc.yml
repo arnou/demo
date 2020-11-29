@@ -10,7 +10,7 @@ plugins:
          -Pdeploy 1>&2"
       publishCmd: "./mvnw -B -ntp deploy
         -Drevision=${nextRelease.version}
-        -DskipNexusStagingDeployMojo=true
+        -DskipNexusStagingDeployMojo=false
         -DaltSnapshotDeploymentRepository=snapshots::default::https://oss.sonatype.org/content/repositories/snapshots
         -DaltReleaseDeploymentRepository=releases::default::https://oss.sonatype.org/service/local/staging/deploy/maven2
         -Pdeploy
