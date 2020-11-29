@@ -1,3 +1,10 @@
+## [1.3.19](https://github.com/arnou/demo/compare/v1.3.18...v1.3.19) (2020-11-29)
+
+
+### Bug Fixes
+
+* retest real deploy ([cc32f63](https://github.com/arnou/demo/commit/cc32f63f0018d21e8a8d3cc4ee742ad352df6e33))
+
 ## [1.3.18](https://github.com/arnou/demo/compare/v1.3.17...v1.3.18) (2020-11-29)
 
 
