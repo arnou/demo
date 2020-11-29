@@ -1,3 +1,10 @@
+## [1.3.22](https://github.com/arnou/demo/compare/v1.3.21...v1.3.22) (2020-11-29)
+
+
+### Bug Fixes
+
+* **deps:** bump flatten-maven-plugin from 1.1.0 to 1.2.5 ([f725e1b](https://github.com/arnou/demo/commit/f725e1b0c16863aaef2d90c0f8900868dfe0e831))
+
 ## [1.3.21](https://github.com/arnou/demo/compare/v1.3.20...v1.3.21) (2020-11-29)
 
 
