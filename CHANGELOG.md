@@ -1,3 +1,10 @@
+## [1.3.23](https://github.com/arnou/demo/compare/v1.3.22...v1.3.23) (2020-12-02)
+
+
+### Bug Fixes
+
+* publish to github ([bb151c0](https://github.com/arnou/demo/commit/bb151c0cd30b506be9c9df4b5ada5d496245179c))
+
 ## [1.3.22](https://github.com/arnou/demo/compare/v1.3.21...v1.3.22) (2020-11-29)
 
 
