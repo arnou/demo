@@ -3,9 +3,8 @@ plugins:
   - "@semantic-release/release-notes-generator"
   - "@semantic-release/changelog"
   - "@semantic-release/git"
-  - "@semantic-release/github"
   - - "@semantic-release/exec"
-    - verifyConditionsCmd: "./mvnw -B -ntp verify
+    - verifyConditionsCmd: "./mvnw -B -ntp clean verify
         -Dgpg.passphrase=$GPG_PASSPHRASE
          -Pdeploy 1>&2"
       publishCmd: "./mvnw -B -ntp nexus-staging:deploy
@@ -14,5 +13,8 @@ plugins:
         -DaltSnapshotDeploymentRepository=snapshots::default::https://oss.sonatype.org/content/repositories/snapshots
         -DaltReleaseDeploymentRepository=releases::default::https://oss.sonatype.org/service/local/staging/deploy/maven2
         -Pdeploy
-        -s maven-settings.xml 1>&2 &&
-        echo {'name': 'Maven Release ${nextRelease.version}', 'url': 'http://url/release/${nextRelease.version}'}"
+        -s maven-settings.xml 1>&2 "
+  - - "@semantic-release/github"
+    - assets:
+        - path: ./target/*.jar
+          label: Maven Artifacts
