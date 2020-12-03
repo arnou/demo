@@ -1,3 +1,12 @@
+## [1.3.25](https://github.com/arnou/demo/compare/v1.3.24...v1.3.25) (2020-12-03)
+
+
+### Bug Fixes
+
+* add maven goal for retrieve artifactId ([7832b27](https://github.com/arnou/demo/commit/7832b27fa388cf992761b0129c15d000b09d5f76))
+* add maven goal for retrieve artifactId ([4c11c0c](https://github.com/arnou/demo/commit/4c11c0c4f974ad5ff0a6ea1acb1ac861cfc72118))
+* move get group after chmod on mvnw ([dbf6332](https://github.com/arnou/demo/commit/dbf633212522a479be526f37df5fccbc7e9e0517))
+
 ## [1.3.24](https://github.com/arnou/demo/compare/v1.3.23...v1.3.24) (2020-12-03)
 
 
