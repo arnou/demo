@@ -11,4 +11,12 @@ plugins:
         - path:
             - "./target/*-*.jar"
             - "!./target/original*"
+            - "!./target/*javadoc.jar"
+            - "!./target/*sources.jar"
           label: Package
+        - path:
+            - "./target/*javadoc.jar"
+          label: Javadoc
+        - path:
+            - "./target/*sources.jar"
+          label: Sources
