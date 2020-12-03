@@ -1,3 +1,10 @@
+## [1.3.28](https://github.com/arnou/demo/compare/v1.3.27...v1.3.28) (2020-12-03)
+
+
+### Bug Fixes
+
+* asset adjust ([365cec8](https://github.com/arnou/demo/commit/365cec8aaf697ed80c31ca6a0c8b2d1a572ead07))
+
 ## [1.3.27](https://github.com/arnou/demo/compare/v1.3.26...v1.3.27) (2020-12-03)
 
 
