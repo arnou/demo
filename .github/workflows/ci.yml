@@ -27,6 +27,23 @@ jobs:
         run: export GPG_TTY=$(tty) && echo -e "$GPG_PRIVATE_KEY" | gpg --batch --import && chmod +x mvnw
         env:
           GPG_PRIVATE_KEY: ${{ secrets.gpg_private_key }}
+      - name: Prepare Maven Settings
+        uses: s4u/maven-settings-action@v2.2.0
+        with:
+          githubServer: false
+          properties: |
+            [
+              {"skipNexusStagingDeployMojo": "true"},
+              {"gpg.passphrase": "${{ secrets.gpg_passphrase }}"},
+              {"altSnapshotDeploymentRepository": "snapshots::default::https://oss.sonatype.org/content/repositories/snapshots"},
+              {"altReleaseDeploymentRepository": "releases::default::https://oss.sonatype.org/service/local/staging/deploy/maven2"}
+            ]
+          servers: |
+            [{
+                "id": "ossrh",
+                "username": "${{ secrets.OSSRH_JIRA_USERNAME }}",
+                "password": "${{ secrets.OSSRH_JIRA_PASSWORD }}"
+            }]
       - name: Semantic Prerelease
         if: env.GITHUB_BRANCH != 'main'
         uses: cycjimmy/semantic-release-action@v2
@@ -40,7 +57,6 @@ jobs:
           dry_run: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GPG_PASSPHRASE: ${{ secrets.gpg_passphrase }}
       - name: Semantic Release
         if: env.GITHUB_BRANCH == 'main'
         uses: cycjimmy/semantic-release-action@v2
@@ -53,6 +69,3 @@ jobs:
             @semantic-release/exec@5.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GPG_PASSPHRASE: ${{ secrets.gpg_passphrase }}
-          OSSRH_JIRA_USERNAME: ${{ secrets.OSSRH_JIRA_USERNAME }}
-          OSSRH_JIRA_PASSWORD: ${{ secrets.OSSRH_JIRA_PASSWORD }}

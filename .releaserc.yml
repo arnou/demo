@@ -4,17 +4,14 @@ plugins:
   - "@semantic-release/changelog"
   - "@semantic-release/git"
   - - "@semantic-release/exec"
-    - verifyConditionsCmd: "./mvnw -B -ntp clean verify
-        -Dgpg.passphrase=$GPG_PASSPHRASE
-         -Pdeploy 1>&2"
-      publishCmd: "./mvnw -B -ntp nexus-staging:deploy
-        -Drevision=${nextRelease.version}
-        -DskipNexusStagingDeployMojo=true
-        -DaltSnapshotDeploymentRepository=snapshots::default::https://oss.sonatype.org/content/repositories/snapshots
-        -DaltReleaseDeploymentRepository=releases::default::https://oss.sonatype.org/service/local/staging/deploy/maven2
-        -Pdeploy
-        -s maven-settings.xml 1>&2 "
+    - verifyConditionsCmd: "./mvnw -B -ntp clean verify -Drevision=${nextRelease.version} -Pdeploy 1>&2"
+      publishCmd: "./mvnw -B -ntp nexus-staging:deploy -Pdeploy 1>&2 "
   - - "@semantic-release/github"
     - assets:
-        - path: ./target/*.jar
-          label: Maven Artifacts
+        - path: ./target/*-${nextRelease.version}.jar
+          label: Artifact
+        - path: ./target/*-${nextRelease.version}.sources.jar
+          label: Sources
+        - path: ./target/*-${nextRelease.version}-javadoc.jar
+          label: Javadoc
+    - addReleases: top
