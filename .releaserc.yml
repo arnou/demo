@@ -9,6 +9,6 @@ plugins:
   - - "@semantic-release/github"
     - assets:
         - path:
-            - ./target/*-{[0-9].[0-9].[0-9]}.jar
-            - !./target/original*
+            - "./target/*-{[0-9].[0-9].[0-9]}.jar"
+            - "!./target/original*"
           label: Package
