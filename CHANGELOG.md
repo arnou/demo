@@ -1,3 +1,10 @@
+## [1.3.26](https://github.com/arnou/demo/compare/v1.3.25...v1.3.26) (2020-12-03)
+
+
+### Bug Fixes
+
+* remove unused variable generation ([2b89b84](https://github.com/arnou/demo/commit/2b89b845648115f8eb1128397c2cf847ba450976))
+
 ## [1.3.25](https://github.com/arnou/demo/compare/v1.3.24...v1.3.25) (2020-12-03)
 
 
