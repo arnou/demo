@@ -23,6 +23,13 @@ jobs:
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: |
             ${{ runner.os }}-maven-
+      - name: Get groupId and artifactId
+          run: |
+            GROUPID=$( ./mvnw help:evaluate -Dexpression=project.groupId -q -DforceStdout )
+            ARTIFACTID=$( ./mvnw help:evaluate -Dexpression=project.artifactId -q -DforceStdout )
+            echo "::set-output name=groupId::$GROUPID"
+            echo "::set-output name=artifactId::$ARTIFACTID"
+          id: get_infos
       - name: Import GPG and Prepare build
         run: export GPG_TTY=$(tty) && echo -e "$GPG_PRIVATE_KEY" | gpg --batch --import && chmod +x mvnw
         env:
