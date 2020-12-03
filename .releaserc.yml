@@ -4,14 +4,10 @@ plugins:
   - "@semantic-release/changelog"
   - "@semantic-release/git"
   - - "@semantic-release/exec"
-    - verifyConditionsCmd: "./mvnw -B -ntp clean verify -Pdeploy 1>&2 "
-      publishCmd: "./mvnw -B -ntp clean deploy -Drevision=${nextRelease.version} -Pdeploy 1>&2 "
+    - verifyReleaseCmd: "./mvnw -B -ntp clean verify -Drevision=${nextRelease.version}-SNAPSHOT -Pdeploy 1>&2 "
+      publishCmd: "./mvnw -B -ntp clean deploy -Drevision=${nextRelease.version} -Pdeploy 1>&2 && echo {'name': 'Maven Release ${nextRelease.version}', 'url': 'http://url/release/${nextRelease.version}'} "
   - - "@semantic-release/github"
     - assets:
-        - path: ./target/*-${nextRelease.version}.jar
-          label: Artifact
-        - path: ./target/*-${nextRelease.version}.sources.jar
-          label: Sources
-        - path: ./target/*-${nextRelease.version}-javadoc.jar
-          label: Javadoc
+        - path: ./target/*-*.jar
+          label: Artifacts
       addReleases: top
