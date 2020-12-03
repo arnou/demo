@@ -14,4 +14,4 @@ plugins:
           label: Sources
         - path: ./target/*-${nextRelease.version}-javadoc.jar
           label: Javadoc
-    - addReleases: top
+      addReleases: top
