@@ -10,8 +10,4 @@ plugins:
     - assets:
         - path: "./target/*-${nextRelease.version}.jar"
           label: Artifact
-        - path: "./target/*-${nextRelease.version}.sources.jar"
-          label: Sources
-        - path: "./target/*-${nextRelease.version}-javadoc.jar"
-          label: Javadoc
     - addReleases: top
