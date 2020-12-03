@@ -1,3 +1,15 @@
+## [1.3.24](https://github.com/arnou/demo/compare/v1.3.23...v1.3.24) (2020-12-03)
+
+
+### Bug Fixes
+
+* add quotes to path ([72027ea](https://github.com/arnou/demo/commit/72027ea1c274292c106a27b52606f99f9a003d02))
+* addReleases item is not in array ([acf1984](https://github.com/arnou/demo/commit/acf1984df2c17f8d285498fe09236c19aa65ba6d))
+* indentation ([81a959e](https://github.com/arnou/demo/commit/81a959ee6a67c171a6ea9068a78122efa2415966))
+* kiss ([60ca9c5](https://github.com/arnou/demo/commit/60ca9c57595f6e7aa5566cb24a0c6dd624817ed1))
+* nextRelease is unknown when verify ([4945c95](https://github.com/arnou/demo/commit/4945c9533cdf2a5c479fa5fee5637df67147f769))
+* restrict to only one asset ([d770a74](https://github.com/arnou/demo/commit/d770a74c8a65df37891696f1de9e91f628665fc5))
+
 ## [1.3.23](https://github.com/arnou/demo/compare/v1.3.22...v1.3.23) (2020-12-02)
 
 
