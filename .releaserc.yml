@@ -8,10 +8,10 @@ plugins:
       publishCmd: "./mvnw -B -ntp nexus-staging:deploy -Pdeploy 1>&2 "
   - - "@semantic-release/github"
     - assets:
-        - path: ./target/*-${nextRelease.version}.jar
+        - path: "./target/*-${nextRelease.version}.jar"
           label: Artifact
-        - path: ./target/*-${nextRelease.version}.sources.jar
+        - path: "./target/*-${nextRelease.version}.sources.jar"
           label: Sources
-        - path: ./target/*-${nextRelease.version}-javadoc.jar
+        - path: "./target/*-${nextRelease.version}-javadoc.jar"
           label: Javadoc
     - addReleases: top
