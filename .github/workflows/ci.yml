@@ -44,13 +44,6 @@ jobs:
                 "username": "${{ secrets.OSSRH_JIRA_USERNAME }}",
                 "password": "${{ secrets.OSSRH_JIRA_PASSWORD }}"
             }]
-      - name: Get groupId and artifactId
-        run: |
-          GROUPID=$( ./mvnw help:evaluate -Dexpression=project.groupId -q -DforceStdout )
-          ARTIFACTID=$( ./mvnw help:evaluate -Dexpression=project.artifactId -q -DforceStdout )
-          echo "::set-output name=groupId::$GROUPID"
-          echo "::set-output name=artifactId::$ARTIFACTID"
-        id: get_infos
       - name: Semantic Prerelease
         if: env.GITHUB_BRANCH != 'main'
         uses: cycjimmy/semantic-release-action@v2

@@ -5,9 +5,8 @@ plugins:
   - "@semantic-release/git"
   - - "@semantic-release/exec"
     - verifyReleaseCmd: "./mvnw -B -ntp clean verify -Drevision=${nextRelease.version}-SNAPSHOT -Pdeploy 1>&2 "
-      publishCmd: "./mvnw -B -ntp clean deploy -Drevision=${nextRelease.version} -Pdeploy 1>&2 && echo {'name': 'Maven Release ${nextRelease.version}', 'url': 'http://url/release/${nextRelease.version}'} "
+      publishCmd: "./mvnw -B -ntp clean deploy -Drevision=${nextRelease.version} -Pdeploy 1>&2 "
   - - "@semantic-release/github"
     - assets:
-        - path: ./target/*-*.jar
-          label: Artifacts
-      addReleases: top
+        - path: ./target/*-{[0-9]\.[0-9]\.[0-9]}.jar
+          label: Package
