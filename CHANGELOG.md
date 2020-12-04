@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/arnou/demo/compare/v2.0.0...v3.0.0) (2020-12-04)
+
+
+### Bug Fixes
+
+* version finale ([dac1936](https://github.com/arnou/demo/commit/dac1936e422eede85c383c7753cda7790c8033e7))
+
+
+### BREAKING CHANGES
+
+* fake2, juste pour tester avant MEP
+
 # [2.0.0](https://github.com/arnou/demo/compare/v1.3.30...v2.0.0) (2020-12-04)
 
 
