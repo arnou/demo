@@ -33,7 +33,7 @@ jobs:
           githubServer: false
           properties: |
             [
-              {"skipNexusStagingDeployMojo": "true"},
+              {"skipNexusStagingDeployMojo": "false"},
               {"gpg.passphrase": "${{ secrets.gpg_passphrase }}"},
               {"altSnapshotDeploymentRepository": "snapshots::default::https://oss.sonatype.org/content/repositories/snapshots"},
               {"altReleaseDeploymentRepository": "releases::default::https://oss.sonatype.org/service/local/staging/deploy/maven2"}
