@@ -1,3 +1,15 @@
+# [4.0.0](https://github.com/arnou/demo/compare/v3.0.1...v4.0.0) (2020-12-06)
+
+
+### Bug Fixes
+
+* version finale ([0873933](https://github.com/arnou/demo/commit/0873933b0d23365284dfa233ca5e8cec65128666))
+
+
+### BREAKING CHANGES
+
+* fake2, juste pour tester avant MEP
+
 ## [3.0.1](https://github.com/arnou/demo/compare/v3.0.0...v3.0.1) (2020-12-06)
 
 
