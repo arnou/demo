@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/arnou/demo/compare/v3.0.0...v3.0.1) (2020-12-06)
+
+
+### Bug Fixes
+
+* readme ([58a5d79](https://github.com/arnou/demo/commit/58a5d79d1c0c717f7718c064505717f69e19dcd5))
+
 # [3.0.0](https://github.com/arnou/demo/compare/v2.0.0...v3.0.0) (2020-12-04)
 
 
