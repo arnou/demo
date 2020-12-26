@@ -1,3 +1,10 @@
+## [4.0.2](https://github.com/arnou/demo/compare/v4.0.1...v4.0.2) (2020-12-26)
+
+
+### Bug Fixes
+
+* **deps:** bump s4u/maven-settings-action from v2.2.0 to v2.3.0 ([9df0cdb](https://github.com/arnou/demo/commit/9df0cdb941ea05e63ad77674ebf3fc1875bb682e))
+
 ## [4.0.1](https://github.com/arnou/demo/compare/v4.0.0...v4.0.1) (2020-12-26)
 
 
