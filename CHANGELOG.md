@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/arnou/demo/compare/v4.0.0...v4.0.1) (2020-12-26)
+
+
+### Bug Fixes
+
+* **deps:** bump micronaut-parent from 2.2.0 to 2.2.2 ([370bf64](https://github.com/arnou/demo/commit/370bf64f821cb2a7d8fcf2975239e6532109e96a))
+
 # [4.0.0](https://github.com/arnou/demo/compare/v3.0.1...v4.0.0) (2020-12-06)
 
 
